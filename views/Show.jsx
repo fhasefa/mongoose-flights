@@ -1,4 +1,5 @@
 import React from 'react'
+import DefaultLayout from './layouts/DefaultLayout'
 
 function Show(props) {
     let airportsDestinations = ['AUS', 'DAL', 'LAX', 'SAN', 'SEA']
@@ -36,6 +37,7 @@ function Show(props) {
     }
 
     return (
+        <DefaultLayout>
         <div style={styles}>
             <h1>Flight View</h1>
             <h2>Departs</h2>
@@ -89,6 +91,7 @@ function Show(props) {
             <a href="/flights" style={{...btnStyles, backgroundColor: '#388E3C'}}>Back</a>
 
         </div>
+        </DefaultLayout>
     )
 }
 
