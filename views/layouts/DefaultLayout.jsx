@@ -10,7 +10,14 @@ function DefaultLayout(props) {
             </head>
             <body>
                 <nav>
-                    <ul>
+                    <ul style={{ 
+  display: 'flex',
+  justifyContent: 'space-around',
+  alignItems: 'center',
+  backgroundColor: 'green',
+  color: '#fff',
+  padding: '1rem',
+  }}>
                         <li><a href="/flights">ALL FLIGHTS</a></li>
                         <li><a href="/flights/new">ADD FLIGHT</a></li>
                     </ul>
